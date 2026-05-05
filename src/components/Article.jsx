@@ -1,12 +1,12 @@
-function Article() {
+import React from "react";
+
+function Article({ title, date = "January 1, 1970", preview }) {
   return (
-    <div className="wrapper-article">
-      <article>
-        <h3>title prop</h3>
-        <small>date</small>
-        <p>preview prop</p>
-      </article>
-    </div>
+    <article>
+      <h3>{title}</h3>
+      <small>{date}</small>
+      <p>{preview}</p>
+    </article>
   );
 }
 
