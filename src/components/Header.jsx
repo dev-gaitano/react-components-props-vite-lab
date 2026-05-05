@@ -1,7 +1,8 @@
-function Header() {
+function Header({ name }) {
   return (
-    <div className="wrapper-header">
-    </div>
+    <header>
+      <h1>{name}</h1>
+    </header>
   );
 }
 

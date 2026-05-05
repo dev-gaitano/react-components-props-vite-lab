@@ -11,9 +11,9 @@ console.log(blogData);
 function App() {
   return (
     <div className="App">
-      <Header />
-      <About />
-      <ArticleList />
+      <Header name={blogData.name} />
+      <About image={blogData.image} about={blogData.about} />
+      <ArticleList posts={blogData.posts} />
     </div>
   );
 }
